@@ -1,2 +1,2 @@
-let response = fetch('https://jsonplaceholder.typicode.com/photos')
+let response = await fetch('https://jsonplaceholder.typicode.com/photos')
 console.log(response)
