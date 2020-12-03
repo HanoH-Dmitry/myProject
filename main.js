@@ -7,7 +7,7 @@ async function getResponse() {
 
 	//for in
 	for (key in content) {
-		console.log(key)
+		console.log(content[key])
 	}
 }
 getResponse()
