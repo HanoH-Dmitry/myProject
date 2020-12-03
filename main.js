@@ -11,7 +11,7 @@ async function getResponse() {
 	for (key in content) {
 
 		list.innerHTML += `
-			<li class="post">
+			<li>
 				<h4>${content[key].title}</h4>
 				<img src="${content[key].url}" width="300">
 			</li>
