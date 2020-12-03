@@ -3,11 +3,19 @@ async function getResponse() {
 	let content = await response.json()
 	content = content.splice(0, 10)
 	
+	let list = document.querySelector('.posts')
+
 	let key;
 
 	//for in
 	for (key in content) {
-		console.log(content[key])
+
+		list.innerHTML += `
+			<li class="post">
+				<h4>${(content[key].title)}</h4>
+				<img src="${(content[key].url)}" width="300">
+			</li>
+		`
 	}
 }
 getResponse()
