@@ -3,7 +3,7 @@ async function getResponse() {
 	let content = await response.json()
 	content = content.splice(0, 10)
 	
-	let list = document.querySelector('.posts')
+	let list = document.querySelector('.featurette-image img-responsive center-block')
 
 	let key;
 
